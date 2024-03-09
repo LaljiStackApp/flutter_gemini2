@@ -18,6 +18,7 @@ class GeminiResponseProvider extends ChangeNotifier {
   bool get loading => _loading;
 
   GeminiResponseProvider() {
+    print('hello');
     Timer.periodic(const Duration(milliseconds: 2), (timer) {
       if (response == null || lastTypeResponseOrNull == response) {
         return;
